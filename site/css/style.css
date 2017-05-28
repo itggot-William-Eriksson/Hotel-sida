@@ -109,6 +109,13 @@ h3{
 	border-color: grey;
 }
 
+.textblock_with_header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .bildblock_mainpage {
 	display: flex;
 	flex-direction: column;
@@ -119,6 +126,11 @@ img.mainpage {
 	width: 500px;
 	margin-right: 100px;
 	margin-left: 100px;
+}
+
+p{
+	font-size: 20px;
+	margin: 0;
 }
 
 p.picture_credit {
@@ -137,6 +149,7 @@ p.mainpage {
 p.about_us {
 	font-size: 20px;
 	margin: 0;
+	margin-bottom: 50px;
 	margin-right: 100px;
 	margin-left: 100px;
 }
@@ -151,6 +164,11 @@ p.about_us {
 	bottom: 10px;
 	left: 10px;
 	z-index: 1;
+}
+
+.about_us_icon_holder {
+	display: flex;
+	flex-direction: row;
 }
 
 .pictures_top {
