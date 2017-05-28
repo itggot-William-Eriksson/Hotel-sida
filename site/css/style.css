@@ -38,8 +38,22 @@ header {
 	align-items: center;
 }
 
-.background_image_holder {
+.about_us {
+	margin-top: 75px;
+}
+
+.background_image_holder_home {
 	background-image: url("../img/hotel_rum_insida2.jpg");
+	z-index: -1;
+	height: 1000px;
+	position: fixed;
+	width: 100%;
+	top: 70px;
+	background-size: 100%
+}
+
+.background_image_holder_pictures {
+	background-image: url("../img/coruscant_skyline.jpg");
 	z-index: -1;
 	height: 1000px;
 	position: fixed;
@@ -65,16 +79,31 @@ h2:hover{
 	transition: 0.5s;
 }
 
-img.icon {
-	max-height: 55px;
-	margin: 10px;
+h3{
+	font-size: 60px;
+	margin: 0;
+	padding: 10px;
 }
 
-.textblock_mainpage {
+.icon{
+	margin-left: 15px;
+}
+
+.textblock_home {
 	display: flex;
 	flex-direction: row;
 	border: 0;
 	border-top: 2px;
+	padding: 50px;
+	border-style: solid;
+	border-color: grey;
+}
+
+.textblock_pictures {
+	display: flex;
+	flex-direction: row;
+	border: 0;
+	border-bottom: 2px;
 	padding: 50px;
 	border-style: solid;
 	border-color: grey;
@@ -105,6 +134,13 @@ p.mainpage {
 	margin-left: 100px;
 }
 
+p.about_us {
+	font-size: 20px;
+	margin: 0;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
 .position_flip {
 	display: flex;
 	flex-direction: row-reverse;
@@ -112,10 +148,63 @@ p.mainpage {
 
 .scroll_up{
 	position: fixed;
-	bottom: 0;
-	left: 0;
+	bottom: 10px;
+	left: 10px;
 	z-index: 1;
 }
+
+.pictures_top {
+	border-top: 2px;
+	border-style: solid;
+	border-color: grey;
+}
+
+.pictures_bottom {
+	border-bottom: 0px;
+}
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon {
+    width: 35px;
+    height: 35px;
+    background-position: -45px -5px;
+}
+
+.sprite-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -50px;
+}
+
+.sprite-scroll_up_button {
+    width: 35px;
+    height: 35px;
+    background-position: -45px -50px;
+}
+
+.sprite-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -90px -5px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -90px -45px;
+}
+
 
 .closed{
 	display: none;
