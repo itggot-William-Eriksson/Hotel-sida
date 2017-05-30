@@ -47,7 +47,7 @@ header {
 .background_image_holder_home {
 	background-image: url("../img/hotel_rum_insida2.jpg");
 	z-index: -1;
-	height: 500px;
+	height: 1000px;
 	position: fixed;
 	width: 100%;
 	top: 70px;
@@ -57,7 +57,7 @@ header {
 .background_image_holder_pictures {
 	background-image: url("../img/coruscant_skyline.jpg");
 	z-index: -1;
-	height: 500px;
+	height: 1000px;
 	position: fixed;
 	width: 100%;
 	top: 70px;
@@ -241,8 +241,10 @@ p.about_us {
 }
 
 @media only screen
-	and (max-device-height : 1500px)
-	and (max-device-width : 1000px) {
+	and (max-device-height : 1050px)
+	and (min-device-height : 1000px)
+	and (max-device-width : 800px)
+	and (min-device-width : 750px) {
 		img.mainpage {
 			margin: 10px;
 			width: 300px;
@@ -267,5 +269,70 @@ p.about_us {
 
 		h3 {
 			font-size: 40px;
+		}
+
+		.background_image_holder_home {
+			height: 500px;
+		}
+
+		.background_image_holder_pictures {
+			height: 500px;
+		}
+	}
+
+@media only screen
+	and (max-device-width : 500px)
+	and (max-device-height : 750px) {
+		img.mainpage {
+			width: 300px;
+			margin: 0px;
+			margin-top: 30px;
+		}
+
+		p.mainpage {
+			width: 300px;
+			margin: 0px;
+		}
+
+		h1 {
+			font-size: 40px;
+		}
+
+		h2 {
+			font-size: 20px;
+		}
+
+		h3 {
+			font-size: 35px;
+		}
+
+		.content {
+			margin-top: 225px;
+		}
+
+		.about_us {
+			margin-top: 75px;
+		}
+
+		p.about_us {
+			margin-left: 0;
+			margin-right: 0;
+			width: 300px;
+		}
+
+		.background_image_holder_home {
+			height: 500px;
+		}
+
+		.background_image_holder_pictures {
+			height: 500px;
+		}
+
+		.textblock_pictures {
+			flex-direction: column;
+		}
+
+		.textblock_home {
+			flex-direction: column;
 		}
 	}
